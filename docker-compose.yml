@@ -1,0 +1,20 @@
+version: '2'
+services:
+  db:
+    container_name: db
+    #latest mysql will not work, use only version 5.5
+    image: mysql:5.5
+    environment:
+    - MYSQL_ROOT_PASSWORD=Welcome123
+   # - MYSQL_USER=pranathi
+    - MYSQL_PASSWORD=Welcome123
+    - MYSQL_DATABASE=mcc
+    volumes:
+    - "./db:/docker-entrypoint-initdb.d"
+  web:
+    container_name: web
+    build: "./web"
+    ports:
+    - 80:8080
+    depends_on:
+      - db
