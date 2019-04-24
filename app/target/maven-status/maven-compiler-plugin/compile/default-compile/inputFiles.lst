@@ -1,0 +1,10 @@
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/dao/teamdao/TeamDao.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/model/Team.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/service/Service.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/utils/MccUtils.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/dao/playerdao/PlayerDaoImpl.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/dao/teamdao/TeamDaoImpl.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/dao/playerdao/PlayerDao.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/controller/MainController.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/service/ServiceImpl.java
+/home/ubuntu/docker201/mkcc-app/src/main/java/com/mindtree/model/Player.java
