@@ -17,5 +17,23 @@ The db/ folder consists of *.sql files* that you may want to run on your databas
 ```
 ##### 3. web/
 ```
-This folder consists of a Dockerfile and the .war file to deploy on the Tomcat Server. You may add your own .war files here and modify the Dockerfile accordingly. 
+This folder consists of a Dockerfile and the *.war file* to deploy on the Tomcat Server. You may add your own .war files here and modify the Dockerfile accordingly. 
 
+##### Using the Project
+
+###### Steps: 
+
+1. Cloning the git repo: 
+```
+$ git clone https://github.com/rathoremayank/docker201.git/
+```
+2. Run docker-compose up:
+```
+$ cd docker201/
+$ sudo docker-compose up
+```
+
+
+
+
+### ©Mayank
