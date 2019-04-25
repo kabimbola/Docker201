@@ -11,6 +11,7 @@ services:
     - MYSQL_DATABASE=mcc
     volumes:
     - "./db:/docker-entrypoint-initdb.d"
+    - "my-datavolume:/var/lib/mysql"
   web:
     container_name: web
     build: "./web"
@@ -18,3 +19,5 @@ services:
     - 80:8080
     depends_on:
       - db
+volumes:
+  my-datavolume:
