@@ -13,3 +13,8 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+
