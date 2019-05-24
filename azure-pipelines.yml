@@ -31,11 +31,7 @@ steps:
 #     repository: 'octopent/mcc'
 #     command: 'push'
 
-
-
-
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/'
-    Contents: '**/*.yaml'
+    Contents: '**.yaml'
     TargetFolder: '$(System.DefaultWorkingDirectory)/TestCI_JavaDocker'
