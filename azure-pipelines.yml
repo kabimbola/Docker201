@@ -15,6 +15,18 @@ steps:
 
 - task: Docker@2
   inputs:
-    command: 'buildAndPush'
+    containerRegistry: 'dockerhub-connection'
+    repository: 'octopent/mcc'
+    command: 'build'
     Dockerfile: '**/Dockerfile'
 
+- task: Docker@2
+  inputs:
+    containerRegistry: 'dockerhub-connection'
+    command: 'login'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'dockerhub-connection'
+    repository: 'octopent/mcc'
+    command: 'push'
