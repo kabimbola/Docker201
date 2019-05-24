@@ -31,8 +31,11 @@ steps:
 #     repository: 'octopent/mcc'
 #     command: 'push'
 
-# - task: PublishBuildArtifacts@1
-#   inputs:
-#     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-#     ArtifactName: 'MCCArtifacts'
-#     publishLocation: 'Container'
+
+
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '/'
+    Contents: '**/*.yaml'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/TestCI_JavaDocker'
