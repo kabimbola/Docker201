@@ -31,8 +31,8 @@ steps:
 #     repository: 'octopent/mcc'
 #     command: 'push'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'MCCArtifacts'
-    publishLocation: 'Container'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+#     ArtifactName: 'MCCArtifacts'
+#     publishLocation: 'Container'
